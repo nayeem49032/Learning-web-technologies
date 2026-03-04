@@ -25,10 +25,10 @@ buttonArea.style.gridTemplateColumns='repeat(4,1fr)';
 buttonArea.style.gap='10px';
 calculator.appendChild(buttonArea);
 
-const buttons=['7','9','/',
-            '4','5','6','*',
-            '1','2','3','-',
-            '0','C','=','+'
+const buttons=['7','8','9','*',
+            '4','5','6','-',
+            '1','2','3','+',
+            '0','C','=','/'
         ];
 
 buttons.forEach(text=>{
