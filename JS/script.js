@@ -28,7 +28,7 @@ btnmail.addEventListener('click', email_validation);
 function email_validation() {
 
     if (email.value === "") {
-        alert("Email should be entered");
+        alert("Email Must be entered");
     }
     else if (!/^[a-zA-z0-9.-_]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(email.value)) {
         alert('Input Valid Email');
@@ -65,5 +65,66 @@ function date_validation() {
         alert('Invalid Year (Enter a realistic year)');
     }
 }
+
+let degree = document.getElementsByName('degree');
+let btndegree = document.getElementById('btndeg');
+btndegree.addEventListener('click', btndeg_validation);
+function btndeg_validation() {
+    let is_chacked = false;
+    for (let i = 0; i < degree.length; i++) {
+        if (degree[i].checked) {
+            is_chacked = true;
+            break;
+        }
+    }
+    if (!is_chacked) {
+        alert('Select Minumum degree');
+    }
+    else {
+        alert('Degree Validation Successfull');
+    }
+}
+
+let bldgrop = document.getElementsByTagName('select')[0];
+
+let btnbldgrp = document.getElementById('btnbldgrp');
+btnbldgrp.addEventListener('click', bldgrp_validation);
+
+function bldgrp_validation() {
+    if (bldgrop.value === "") {
+        alert('Your blood group is not select yet');
+        bldgrop.style.border = "2px solid red";
+    }
+    else {
+        alert('Scuucssfully Intered');
+        bldgrop.style.borderBottom = "2px solid blue";
+        bldgrop.style.borderEndStartRadius = "5px";
+    }
+}
+
+let userid = document.getElementById('userid');
+let id_pic = document.getElementById('picture');
+let button7 = document.getElementById('btn7');
+button7.addEventListener('click', valid_id_pic);
+
+function valid_id_pic() {
+    if (userid.value === "" && id_pic.files.length === 0) {
+        alert('Both user Id & picture Is empty');
+        return;
+    }
+    else if (Number(userid.value) < 0 || userid.value === "") {
+        alert('Please inter a positive number');
+        userid.value="";
+        return;
+    }
+    else if (id_pic.files.length === 0) {
+        alert('Upload a picture');
+        return;
+    }
+    else {
+        alert('Successfully Submited');
+    }
+}
+
 
 console.log("successfully connected....");

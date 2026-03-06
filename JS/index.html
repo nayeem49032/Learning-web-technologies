@@ -150,16 +150,16 @@
         </tr>
         <tr>
             <td style="padding-left: 30px;padding-top: 0;">
-                <fieldset style="width:12%;">
+                <fieldset style="width:15%;">
                     <legend>Degree</legend>
-                    <input type="checkbox" name="Gender" value="" />SSC
-                    <input type="checkbox" name="Gender" value="" />HSC
-                    <input type="checkbox" name="Gender" value="" />BSc
+                    <input type="checkbox" name="degree" value="" />SSC
+                    <input type="checkbox" name="degree" value="" />HSC
+                    <input type="checkbox" name="degree" value="" />BSc
                 </fieldset>
             </td>
         </tr>
         <tr>
-            <td style="padding-left: 30px;padding-top: 0;"><input type="button" name="Sunmit" value="Submit"></td>
+            <td style="padding-left: 30px;padding-top: 0;"><input type="button" name="Sunmit" value="Submit" id="btndeg"></td>
         </tr>
         <tr>
             <td>
@@ -174,7 +174,8 @@
         <tr>
             <td style="padding-left: 30px;padding-top: 0;">Blood Group
                 <select name="">
-                    <option value="A+">A+</option>
+                    <option value="">Select Group</option>
+                    <option value="A+" >A+</option>
                     <option value="A-">A-</option>
                     <option value="B+">B+</option>
                     <option value="B-">B-</option>
@@ -184,12 +185,12 @@
             </td>
         </tr>
         <tr>
+            <td style="padding-left: 30px;padding-top: 0;"><input type="button" name="Sunmit" value="Submit" id="btnbldgrp"></td>
+        </tr>
+        <tr>
             <td>
                 <hr style="border: 01px solid black;">
             </td>
-        </tr>
-        <tr>
-            <td style="padding-left: 30px;padding-top: 0;"><input type="button" name="Sunmit" value="Submit"></td>
         </tr>
         <tr>
             <td>7.</td>
@@ -198,12 +199,12 @@
             <td style="padding-left: 30px;padding-top: 0;">
                 <fieldset style="width: 20%;">
                     <legend>Prifile Picture</legend>
-                    <label for="UserId" id="userid">User Id</label>
-                    <input type="text"> <br><br>
-                    <label for="picture" id="picture">Picture</label>
-                    <input type="file">
+                    <label for="UserId">User Id</label>
+                    <input type="text" id="userid"> <br><br>
+                    <label for="picture">Picture</label>
+                    <input type="file" id="picture" accept=".jpg, .jpeg, .png">
                     <hr style="border: 01px solid black;">
-                    <input type="button" name="Sunmit" value="Submit">
+                    <input type="button" name="Sunmit" value="Submit" id="btn7">
 
                 </fieldset>
             </td>
