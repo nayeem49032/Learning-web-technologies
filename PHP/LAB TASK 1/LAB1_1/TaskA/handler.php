@@ -1,3 +1,4 @@
+<title>Handler Page</title>
 <?php
 if (isset($_REQUEST['submit'])) {
     $username=$_REQUEST['username'];
