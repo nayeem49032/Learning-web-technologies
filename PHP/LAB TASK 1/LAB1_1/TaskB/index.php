@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <h2>Option A</h2>
+    <h2>Option B</h2>
     <fieldset>
         <legend>Name</legend>
         <form method="POST">
