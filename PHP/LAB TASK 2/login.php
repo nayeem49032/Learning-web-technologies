@@ -35,7 +35,7 @@
                         User Name : <input type="password" name="password" value=""> <br>
                         <hr>
                         <input type="checkbox" name="rememberMe" value="">Remember Me <br> <br>
-                        <input type="submit" name="submit" value="submit"> <a href="forgotPassword">Forgot Password?</a> 
+                        <input type="submit" name="submit" value="submit"> <a href="forgotPassword.php">Forgot Password?</a> 
                     </form>
                 </fieldset>
             </td>

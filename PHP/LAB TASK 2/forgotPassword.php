@@ -28,7 +28,14 @@
 
             <tr>
                 <td height="550px" valign="top">
-                    
+                    <fieldset>
+                        <legend>FORGOT PASSWORD</legend>
+                        <form method="POST" action="">
+                            Enter Email : <input type="email" name="email" value=""> <br>
+                            <hr>
+                            <input type="submit" name="submit" value="Submit">
+                        </form>
+                    </fieldset>
                 </td>
             </tr>
 
