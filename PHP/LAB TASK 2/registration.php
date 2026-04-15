@@ -17,7 +17,7 @@
                             <font size="5"><b>Company</b></font>
                         </td>
                         <td align="right">
-                            <a href="public_home.php">Home</a> |
+                            <a href="public_home.html">Home</a> |
                             <a href="login.php">Login</a> |
                             <a href="registration.php">Registration</a>
                         </td>

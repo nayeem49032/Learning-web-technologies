@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Public Home</title>
+    </head>
+
+    <body>
+
+        <table border="1" width="100%"  cellspacing="0" cellpadding="10">
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <img src="images.webp" alt="X" width="40" height="40" align="middle">
+                                <font size="5"><b>Company</b></font>
+                            </td>
+                            <td align="right">
+                                <a href="public_home.php">Home</a> |
+                                <a href="login.php">Login</a> |
+                                <a href="registration.php">Registration</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td height="550px" valign="top">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center">
+                    Copyright &copy; 2017
+                </td>
+            </tr>
+        </table>
+
+    </body>
+
+    </html>
