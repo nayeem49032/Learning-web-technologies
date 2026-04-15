@@ -1,3 +1,45 @@
+<?php
+$name = $email = $userName = $password = $confirmPassword = $gender = $dd = $mm = $yyyy = "";
+
+if (isset($_REQUEST['reset'])) {
+    $name = $email = $userName = $password = $confirmPassword = $gender = $dd = $mm = $yyyy = "";
+}
+?>
+<?php
+session_start();
+$name = $email = $userName = $password = $confirmPassword = $gender = $dd = $mm = $yyyy = "";
+$error = "";
+$success = "";
+
+if (isset($_REQUEST['submit'])) {
+    $name = $_REQUEST['name'];
+    $email = $_REQUEST['email'];
+    $userName = $_REQUEST['userName'];
+    $password = $_REQUEST['password'];
+    $confirmPassword = $_REQUEST['confirmPassword'];
+    $gender = isset($_REQUEST['gender']) ? $_REQUEST['gender'] : "";
+    $dd = $_REQUEST['dd'];
+    $mm = $_REQUEST['mm'];
+    $yyyy = $_REQUEST['yyyy'];
+
+    if (empty($name) || empty($email) || empty($userName) || empty($password) || empty($confirmPassword) || empty($gender) || empty($dd) || empty($mm) || empty($yyyy)) {
+    } elseif ($password !== $confirmPassword) {
+        $error = "Not match Password";
+    } else {
+        $_SESSION['user'] = [
+            'name' => $name,
+            'email' => $email,
+            'userName' => $userName,
+            'password' => $password,
+            'gender' => $gender,
+            'dob' => $dd . "/" . $mm . "/" . $yyyy
+        ];
+
+        $success = "Success";
+        header('location: login.php');
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -39,7 +81,7 @@
                         <hr>
                         Password : <input type="password" name="password" value=""> <br>
                         <hr>
-                        Confirm Password : <input type="password" name="comfirmPassword" value=""> <br>
+                        Confirm Password : <input type="password" name="confirmPassword" value=""> <br>
                         <hr>
                         <fieldset>
                             <legend>Gender</legend>
@@ -48,10 +90,10 @@
                             <input type="radio" name="gender" value="other"> Other
                         </fieldset>
                         <fieldset>
-                            <legend>Dath Of Birth</legend>
+                            <legend>Date Of Birth</legend>
                             <input type="text" name="dd" value="" size="1"> /
                             <input type="text" name="mm" value="" size="1"> /
-                            <input type="text" name="yyy" value="" size="2"> <i>(dd/mm/yyyy)</i>
+                            <input type="text" name="yyyy" value="" size="2"> <i>(dd/mm/yyyy)</i>
                         </fieldset>
                         <br>
                         <input type="submit" name="submit" value="submit">
