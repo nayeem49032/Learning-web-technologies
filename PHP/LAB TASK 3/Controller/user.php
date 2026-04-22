@@ -6,5 +6,4 @@ if (!isset($_SESSION['logged_in'])) {
 }
 ?>
 <h1>Welcome, User!</h1>
-<p>This is your dashboard.</p>
 <a href="logout.php">Logout</a>

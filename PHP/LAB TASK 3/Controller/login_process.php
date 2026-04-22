@@ -19,8 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         exit();
     } else {
-        header("Location: login.php?error=1");
-        exit();
+        echo "Invalid login. <a href='../View/login.php'>Try again</a>";
     }
 }
 ?>

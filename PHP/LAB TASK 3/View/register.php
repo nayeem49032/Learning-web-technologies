@@ -4,17 +4,16 @@
     <title>Register</title>
 </head>
 <body>
-    <h2 style="text-align:center;">Registration</h2>
-    <form method="POST" action="../Controller/register_process.php" style="width:300px; margin:auto;">
-        <input type="text" name="username" placeholder="Username" required style="width:100%; padding:8px;"><br><br>
-        <input type="email" name="email" placeholder="Email" required style="width:100%; padding:8px;"><br><br>
-        <input type="password" name="password" placeholder="Password" required style="width:100%; padding:8px;"><br><br>
-        <select name="role" required style="width:100%; padding:8px;">
-            <option value="">Select Role</option>
+    <h2>Register</h2>
+    <form method="POST" action="../Controller/register_process.php">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <select name="role" required>
             <option value="admin">Admin</option>
             <option value="user">User</option>
-        </select><br><br>
-        <input type="submit" name="submit" value="Register" style="width:100%; padding:8px;">
+        </select><br>
+        <input type="submit" value="Register">
     </form>
 </body>
 </html>
