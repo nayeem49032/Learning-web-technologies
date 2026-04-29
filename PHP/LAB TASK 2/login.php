@@ -31,8 +31,8 @@
                 <fieldset>
                     <legend>LOGIN</legend>
                     <form method="POST" action="">
-                        User Name : <input type="text" name="userName" value=""> <br>
-                        User Name : <input type="password" name="password" value=""> <br>
+                        User Name : <input type="text" name="userName" value=""> <br> 
+                        Password : <input type="password" name="password" value=""> <br>
                         <hr>
                         <input type="checkbox" name="rememberMe" value="">Remember Me <br> <br>
                         <input type="submit" name="submit" value="submit"> <a href="forgotPassword.php">Forgot Password?</a> 
